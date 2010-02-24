@@ -1,0 +1,8 @@
+[Gedit Plugin]
+Module=macro
+IAge=2
+_Name=Macro
+_Description=Records and executes a macro.
+Authors=Sam K. Raju <samkraju@gmail.com>
+Copyright=Copyright © 2009-2010 Sam K. Raju
+Website=http://www.gedit.org
