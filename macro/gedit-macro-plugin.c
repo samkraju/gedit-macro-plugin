@@ -155,7 +155,7 @@ static const GtkActionEntry action_entries[] =
 	  G_CALLBACK (playback_macro_cb) }
 };
 
-const gchar submenu[] =
+const gchar submenu_macro[] =
 "<ui>"
 "  <menubar name='MenuBar'>"
 "    <menu name='ToolsMenu' action='Tools'>"
@@ -244,7 +244,7 @@ impl_activate (GeditPlugin *plugin,
 	gtk_ui_manager_insert_action_group (manager, data->action_group, -1);
 
 	data->ui_id = gtk_ui_manager_add_ui_from_string (manager,
-							 submenu,
+							 submenu_macro,
 							 -1,
 							 &error);
 	if (data->ui_id == 0)
