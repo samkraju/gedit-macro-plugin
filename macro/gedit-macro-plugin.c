@@ -144,13 +144,13 @@ playback_macro_cb (GtkAction   *action,
 static const GtkActionEntry action_entries[] =
 {
 	{ "Macro", NULL, N_("_Macro") },
-	{ "StartRecordMacro", NULL, N_("Start _Recording"), NULL,
+	{ "StartRecordMacro", "gtk-media-record", N_("Start _Recording"), NULL,
 	  N_("Start recording of macro"),
 	  G_CALLBACK (start_record_macro_cb) },
-	{ "StopRecordMacro", NULL, N_("_Stop Recording"), NULL,
+	{ "StopRecordMacro", "gtk-media-stop", N_("_Stop Recording"), NULL,
 	  N_("Stop recording of macro"),
 	  G_CALLBACK (stop_record_macro_cb) },
-	{ "PlaybackMacro", NULL, N_("_Playback Macro"), "<Ctrl>m",
+	{ "PlaybackMacro", "gtk-media-play", N_("_Playback Macro"), "<Ctrl>m",
 	  N_("Playback recorded macro"),
 	  G_CALLBACK (playback_macro_cb) }
 };
@@ -168,6 +168,13 @@ const gchar submenu_macro[] =
 "      </placeholder>"
 "    </menu>"
 "  </menubar>"
+"  <toolbar name='ToolBar'>"
+"    <separator/>"
+"    <toolitem action='StartRecordMacro'/>"
+"    <toolitem action='StopRecordMacro'/>"
+"    <toolitem action='PlaybackMacro'/>"
+"    <separator/>"
+"  </toolbar>"
 "</ui>";
 
 static void
