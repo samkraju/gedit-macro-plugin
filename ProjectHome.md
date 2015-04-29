@@ -1,0 +1,2 @@
+This plugin records a set of keys pressed in gEdit Window and allows the user to repeat the same keystrokes using Macro menu or shortcut key (Ctrl + M).
+This is a copy of the Macro feature available in Notepad++ for Windows.
